@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="icon" type="image/x-icon" href="/assets/photos/logo.png"/>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <img src="/assets/photos/Code typing-bro.svg" class="codetyping"> 
+        <div class="container">
+            <nav>
+                <h1>&lt;ALANIS&gt;</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="fas fa-times" onclick="closemenu()"></li>
+                </ul>
+                <img class="fas" src="/assets/photos/menu.png" onclick="openmenu()">
+            </nav>
+            <div class="header-text ">
+                <p>Developer Fullstack</p>
+                <h1>Hi, I'm <span>Alanis</span>  <br> Estrela From Brazil</h1>
+            </div>
+        </div>
+    </div>
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/assets/photos/Programming-cuate.svg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, my name is Alanis Estrela and I am studying in the technology field, more precisely in Systems Development Technician. I am currently in the third year of the course, focusing my studies on Java. I have solid knowledge of HTML, CSS, C and JavaScript.
+                    I'm looking for my first internship to apply the knowledge acquired during my training in practice.</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span> - HTML</span> <br>Development of semantic web structures, effectively integrating diverse content.</li>
+                    <li><span> - CSS</span> <br>Implementing visual styles and responsive layouts to enhance the user experience.</li>
+                    <li><span> - JAVASCRIPT</span> <br>Creating dynamic interactivity, DOM manipulation and development of advanced features.</li>
+                    <li><span> - C</span> <br>Efficient programming for low-level solutions, with an emphasis on [insert specific application areas].</li>
+                    <li><span> - JAVA</span> <br>Development of enterprise applications and distributed systems, including experience in [insert specific projects].</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>None - Current</span><br>Looking for my first internship as a Full Stack Developer, with an emphasis on the Front-end area. I want to be able to put my knowledge of languages ​​to the test, contributing to challenging projects. With dedication and a desire to learn, I seek to join an innovative team,
+                        where I can apply my knowledge and gain practical experience in web development.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2022 - Current</span><br>Systems Development Technician - Federal Institute of Rio Grande do Sul (4 years).</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<!-------------projects----------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <h2>ArchiveBasquiat</h2>
+                <p>I developed a simple website dedicated to responsiveness and fluidity training. This project covers the life story of an artist, providing an interactive experience that is adaptable to different devices. The main focus was to hone my skills in responsive design while exploring visual storytelling and artistic expression.</p>
+                <a href="https://archive-basquiat.vercel.app/">See more</a>
+            </div>
+            <div>
+                <h2>Soon</h2>
+                <p></p>
+                <a href="#">See more</a>
+            </div>
+            <div>
+                <h2>Soon</h2>
+                <p></p>
+                <a href="#">See more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------contact-------------->
+<div id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><img class="ext-img" src="/assets/photos/icons8-send-email-50.png">Email: alanisestrela30@gmail.com</p>
+                <p><img class="ext-img" src="/assets/photos/icons8-phone.svg">Phone: (51) 9 8331-3326 </p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/seu-perfil-do-linkedin" target="_blank">
+                        <img src="/assets/photos/icons8-linkedin.svg" alt="Linkedin icon">
+                    </a>
+                    <a href="https://github.com/seu-nome-de-usuario" target="_blank">
+                        <img src="/assets/photos/icons8-github.svg" alt="GitHub icon">
+                    </a>
+                </div>
+                <a href="#" class="btn">Download Cv</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 Alanis. Made with ❤️ by Alanis Estrela</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbwdXHiuiTXZ7WNknH2dqgIP45_U_WCOqsU2h_ttjG-KaXl0jchVFLBNi4TpKv35k-kV/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        } )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
