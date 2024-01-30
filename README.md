@@ -6,7 +6,7 @@
 <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
 </div>
 
-<img src ="https://github.com/Alanissss/PortfolioResponsive/blob/main/PortfolioResponsivo/assests/photos/Capa.png"/>
+<img src ="assets/photos/Capa.png"/>
 <div style="display: inline_block">
 
 <a href="https://www.linkedin.com/in/alanis-estrela-7351b6258/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
